@@ -1,0 +1,60 @@
+{
+ “id”: 1
+ “type”: “host”
+ “attribute”: {
+    “name”: “e1”
+    “ip”: “10.0.0.251”
+    “dimage”: “my-coap-server:latest”
+    “ports”: “5683”
+    “port_bindings”: “5683-5683”
+  }
+}
+
+{
+ “id”: 2
+ “type”: “host”
+ “attribute”: {
+    “name”: “e2”
+    “ip”: “10.0.0.252”
+    “dimage”: “my-coap-server:latest”
+    “ports”: “5683”
+    “port_bindings”: “5683-5683”
+  }
+}
+
+{
+ “id”: 3
+ “type”: “host”
+ “attribute”: {
+    “name”: “e3”
+    “ip”: “10.0.0.250”
+    “dimage”: “my-coap-client:latest”
+    “ports”: “5683”
+    “port_bindings”: “5683-5683”
+  }
+}
+
+{
+  “id”: 1
+  “type”: “switch”
+  “attribute”: {
+    “name”: “s1”
+  }
+}
+
+{
+  “id”: 1
+  “type”: “link”
+  “attribute”: {
+    “src”: “e1”
+    “dst”: “s1”
+  }
+}
+{
+  “id”: 2
+  “type”: “link”
+  “attribute”: {
+    “src”: “e2”
+    “dst”: “s1”
+  }
+}
